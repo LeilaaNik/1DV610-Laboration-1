@@ -1,0 +1,79 @@
+body {
+  background-image: url('../assets/background.jpg');
+  background-size: cover; 
+  background-position: top center; 
+  background-repeat: no-repeat; 
+  margin: 0; 
+  padding: 0; 
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  background: none; 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px; 
+  width: 100%; 
+}
+
+input {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  width: calc(100% - 22px); 
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: lightpurple; 
+  font-family: Georgia, serif;
+  color: rgb(106, 2, 106); 
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 5px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+      transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+button:hover {
+  background-color: lightpink;
+  transform: translateY(-2px);
+}
+
+#imageContainer img {
+  width: 350px; 
+  height: 350px; 
+  object-fit: cover; 
+}
+
+#buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px; 
+  margin-top: 10px; 
+}
+
+#greetingMessage {
+  font-family: Garamond, serif;
+  font-size: 24px; 
+  font-weight: bold; 
+  color: rgb(106, 2, 106); 
+  text-align: center; 
+  margin-top: 20px; 
+}
+
+#nameFormContainer {
+  font-family: Garamond, serif;
+  color: rgb(106, 2, 106); 
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+}
