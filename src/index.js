@@ -4,7 +4,7 @@
  * @version 1.0.0
  */
 
-import './components/name-form/index.js'
+import './js/components/name-form/index.js'
 
 /**
  * Shows a greeting message with the name entered in the input field.
@@ -33,7 +33,7 @@ function showRandomImage () {
   ]
   const randomImage = images[Math.floor(Math.random() * images.length)]
   const imgElement = document.createElement('img')
-  imgElement.src = `../assets/${randomImage}`
+  imgElement.src = `./assets/${randomImage}`
   imgElement.alt = 'Random Image'
   document.getElementById('imageContainer').innerHTML = ''
   document.getElementById('imageContainer').appendChild(imgElement)
